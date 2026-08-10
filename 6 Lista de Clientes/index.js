@@ -69,8 +69,8 @@ function mostrarVetorClientes() {
           <td>${vetClientes[i].nome}</td>
           <!-- CPF do cliente -->
           <td>${vetClientes[i].cpf}</td>
-          <!-- Foto do cliente -->
-          <td>${vetClientes[i].foto}</td>
+          <!-- Foto do cliente -->          
+          <td><img src="${vetClientes[i].foto}" style="width: 50px; height: 50px;" alt="foto"></td>
           <td>
           <!-- Botão de excluir, já com a posição do cliente no vetor, embutido em "data-index" -->
             <button class="btn btnExcluir" data-index="${i}">X</button>
@@ -88,8 +88,8 @@ function mostrarVetorClientes() {
       linha.innerHTML = `
         <td>${i + 1}</td>
           <td>${vetClientes[i].nome}</td>
-          <td>${vetClientes[i].cpf}</td>
-          <td>${vetClientes[i].foto}</td>
+          <td>${vetClientes[i].cpf}</td>          
+          <td><img src="${vetClientes[i].foto}" style="width: 50px; height: 50px;" alt="foto"></td>
           <td>
             <button class="btn btnExcluir" data-index="${i}">X</button>
             <button class="btn btnEditar" data-index="${i}">edit</button>
